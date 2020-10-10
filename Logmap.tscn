@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Logmap.gd" type="Script" id=1]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=2]
+
+[node name="Logmap" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Screen" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Plot" type="TextureRect" parent="Screen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Screen"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -70.5
+margin_right = 70.5
+margin_bottom = 24.0
+text = "Press Enter."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UI" parent="Screen" instance=ExtResource( 2 )]
