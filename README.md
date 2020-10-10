@@ -1,5 +1,6 @@
 # Logistic-Map
-A demo for generating the logistic map bifurcation diagram
+A demo for generating the logistic map bifurcation diagram.
+
 It calculates the x[n+1]-value of the initial value 0.5 for a couple of times and approaches the asymptote at a given lambda(growth rate)-value
 Once lambda approaches c. 3.5, you can see that x[n] does not approach a single asymptote, but multiple ones.
 The graph splits faster and faster, until it rbecomes chaotic
